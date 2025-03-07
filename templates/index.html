@@ -150,8 +150,8 @@ AI Engine
             navigator.geolocation.getCurrentPosition(async (position) => {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
-                const url = `http://api.weatherapi.com/v1/current.json?key=b01595d07d4e4cc2afb130127250603&q=${lat},${lon}`;
-                const historyUrl = `http://api.weatherapi.com/v1/history.json?key=b01595d07d4e4cc2afb130127250603&q=${lat},${lon}&dt=${getLastMonthDate()}`;
+                const url = `http://api.weatherapi.com/v1/current.json?key=&q=${lat},${lon}`;
+                const historyUrl = `http://api.weatherapi.com/v1/history.json?key=&q=${lat},${lon}&dt=${getLastMonthDate()}`;
 
                 try {
                     // Fetch current weather data
